@@ -2,18 +2,18 @@ import json
 import os
 from deep_translator import MyMemoryTranslator
 
-def englishToFrench(englishText):
+def english_to_french(english_text):
     """
     Translates English text to French using the MyMemory Translator.
     """
-    frenchText = MyMemoryTranslator(source='en', target='fr').translate(englishText)
-    print(frenchText)
-    return frenchText
+    french_text = MyMemoryTranslator(source='en', target='fr').translate(english_text)
+    print(french_text)
+    return french_text
 
-def frenchToEnglish(frenchText):
+def french_to_english(french_text):
     """
     Translates French text to English using the MyMemory Translator.
     """
-    englishText = MyMemoryTranslator(source='fr', target='en').translate(frenchText)
-    print(englishText)
-    return englishText
+    english_text = MyMemoryTranslator(source='fr', target='en').translate(french_text)
+    print(english_text)
+    return english_text
